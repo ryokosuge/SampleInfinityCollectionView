@@ -31,7 +31,7 @@ class CollectionView: UICollectionView {
         let distanceFromCenterX = fabsf(Float(currentOffset.x - centerOffsetX))
         let distanceFromCenterY = fabsf(Float(currentOffset.y - centerOffsetY))
         
-        if distanceFromCenterX > Float(contentWidth / 3.0) {
+        if distanceFromCenterX > Float(contentWidth / 5.0) {
             contentOffset = CGPoint(x: centerOffsetX, y: currentOffset.y)
         }
         
